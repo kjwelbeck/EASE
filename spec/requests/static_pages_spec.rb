@@ -19,7 +19,7 @@ describe "StaticPages" do
   end
 
   describe "Board Members Page" do
-  	it "should have 'Members' in title " do
+  	it "should have 'Board Members' in title " do
   		visit '/static_pages/members'
   		page.should have_selector('title', 
   			:text => 'EASE | Expediting Access to Standard Education | Board Members')

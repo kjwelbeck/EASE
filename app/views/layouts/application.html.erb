@@ -7,27 +7,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class='contianer '>
+<div class='contianer'>
 
-	<header class="#">
+	<header class="white-sheet">
 		<h1>EASE</h1>
 		<h2>Expediting Access to Standard Education</h2>
 	</header>
 
-	<nav>
+	<nav class= "white-sheet">
 		<ul class ="nav nav-pills">
-			<li><%= link_to("Home", 'static_pages/home')%></li>
-			<li><%= link_to("About Us", 'static_pages/about')%></li>
-				<ul class="dropdown-submenu">
-					<li><%= link_to("Board Members", 'static_pages/members')%></li>
-					<li><%= link_to("Partners", 'static_pages/partners')%></li>
-				</ul>
-			<li><%= link_to("Get Involved", 'static_pages/getInvolved')%></li>
-			<li><%= link_to("Events", 'static_pages/events')%></li>
-			<li><%= link_to("Gallery", 'static_pages/gallery')%></li>
-			<li><%= link_to("FAQs", 'static_pages/faqs')%></li>
-			<li><%= link_to("FAQs", 'static_pages/faqs')%></li>
-			<li><%= link_to("Contact Us", 'static_pages/contact')%></li>
+			<li><%= link_to("Home", '/static_pages/home')%></li>
+			<li><%= link_to("About Us", '/static_pages/about')%></li>
+			<!-- 	<ul class="dropdown-submenu">
+					<li><%= link_to("Board Members", '/static_pages/members')%></li>
+					<li><%= link_to("Partners", '/static_pages/partners')%></li>
+				</ul> -->
+			<li><%= link_to("Get Involved", '/static_pages/getInvolved')%></li>
+			<li><%= link_to("Events", '/static_pages/events')%></li>
+			<li><%= link_to("Gallery", '/static_pages/gallery')%></li>
+			<li><%= link_to("FAQs", '/static_pages/faqs')%></li>
+			<li><%= link_to("Contact Us", '/static_pages/contact')%></li>
 			
 
 		</ul>
@@ -37,6 +36,19 @@
 
 <div class='container'>
 	<%= yield %>
+</div>
+
+<div class="contianer">
+	<div class="white-sheet">
+		<footer>
+			<ul class = "#">
+				<li><%= link_to("EASE Brochure", '#')%></li>
+				<li><%= link_to("IDEAS Grant Proposal", '#')%></li>
+				<li><%= link_to("Constitution", '#')%></li>
+				<li><%= link_to("EASE Brochure", '#')%></li>
+			</ul>
+		</footer>
+	</div>
 </div>
 
 

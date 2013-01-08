@@ -1,4 +1,42 @@
 <%provide(:title, 'About Us')%>
 
-<h1>About</h1>
-<p>Find me in app/views/static_pages/about.html.erb</p>
+		<div id="navcontainer">
+			<ul id="navlist">
+
+				<li><%= link_to "Home", { :controller => 'static_pages', :action => 'home' } -%> </li>
+				<li><%= link_to "About Us", { :controller => 'static_pages', :action => 'about' }, :class => 'current' -%> </li>
+				<li><%= link_to("Get Involved", '/static_pages/getInvolved')%></li>
+				<li><%= link_to("Events", '/static_pages/events')%></li>
+				<li><%= link_to("Gallery", '/static_pages/gallery')%></li>
+				<li><%= link_to("FAQs", '/static_pages/faqs')%></li>
+				<li><%= link_to("Contact Us", '/static_pages/contact')%></li>
+			
+			</ul>
+		</div>
+<div class = "spacer"></div>
+<p>
+EASE is an acronym for Expediting Access to Standard Education. The aim of the program is to improve access to basic education in Africa through sponsorship programs and the establishment of libraries in villages. We believe that education holds the solution to most of the world's problems. Yet, many children are denied the opportunity due to financial constraints. We are convinced that a little effort on our part will go a long way to help.
+</p>
+
+<br>
+
+<p>Although the program has hopes of expanding to other African countries, the initial scope is limited to Ghana and Nigeria. The current focus is to sponsor underprivileged children through Junior Secondary School (JSS), which forms the core of basic education in Ghana and then tentative of the students performance, continue this sponsorship through Senior Secondary School (SSS). EASE’s objectives are:
+</p>
+
+<br>
+<ul>
+<li>To raise awareness at MIT and surrounding institutions about the effect of domestic financial constraints on the accessibility to basic education in developing African countries </li>
+<br>
+<li>To improve access to basic education by financially sponsoring underprivileged students in Africa to attend their equivalent Junior and Senior High School</li>
+<br>
+<li>To promote cooperation with other international development-focused organizations</li>
+<br>
+<li>To help selected villages/schools establish community libraries/stock existing ones</li>
+<br>
+<li>To extend EASE Operations to other colleges besides MIT</li>
+<br>
+<li>To extend EASE Sponsorship and Operations to other African countries</li>
+<br>
+<li>To act on other matters related to the aims and objectives as stated above</li>
+	
+</ul>

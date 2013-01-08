@@ -1,4 +1,33 @@
+
 <%provide(:title, 'Home')%>
 
-<h1>Home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+		<div id="navcontainer">
+			<ul id="navlist">
+
+				<li><%= link_to "Home", { :controller => 'static_pages', :action => 'home' }, :class => 'current' -%> </li>
+				<li><%= link_to("About Us", '/static_pages/about')%></li>
+				<li><%= link_to("Get Involved", '/static_pages/getInvolved')%></li>
+				<li><%= link_to("Events", '/static_pages/events')%></li>
+				<li><%= link_to("Gallery", '/static_pages/gallery')%></li>
+				<li><%= link_to("FAQs", '/static_pages/faqs')%></li>
+				<li><%= link_to("Contact Us", '/static_pages/contact')%></li>
+			
+			</ul>
+		</div>
+
+<div id = "center-image">
+<img > <%= link_to image_tag("blackboard.jpg", alt: "Rails"), '/assets/images/blackboard.jpg' %></img>
+
+</div>
+
+<div class ="spacer"></div>	
+<p> Welcome!</p>
+<p>Great news, you can now donate to EASE through the MIT Giving Website! <p>
+
+<p> Every year, millions of children in Africa are denied access to basic education due to poverty! </p>
+
+<p>EASE is an MIT-student initiative founded with the primary aim of making basic education more accessible to underprivileged children in Africa. We realize that this is a enormous task, but as the wise will say, a journey of a hundred years begins with one step. </p>
+
+<p>Supporting child education since April, 2002 </p>
+
+<p>Explore this site to learn more about how you can help.</p>

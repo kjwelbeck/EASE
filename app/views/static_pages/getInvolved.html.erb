@@ -1,4 +1,17 @@
 <%provide(:title, 'Get Involved')%>
 
-<h1>Get Involved</h1>
+
+		<div id="navcontainer">
+			<ul id="navlist">
+
+				<li><%= link_to "Home", { :controller => 'static_pages', :action => 'home' } -%> </li>
+				<li><%= link_to("About Us", '/static_pages/about')%></li>
+				<li><%= link_to "Get Involved", { :controller => 'static_pages', :action => 'getInvolved'}, :class => 'current' -%> </li>
+				<li><%= link_to("Events", '/static_pages/events')%></li>
+				<li><%= link_to("Gallery", '/static_pages/gallery')%></li>
+				<li><%= link_to("FAQs", '/static_pages/faqs')%></li>
+				<li><%= link_to("Contact Us", '/static_pages/contact')%></li>
+			
+			</ul>
+		</div>
 <p>Find me in app/views/static_pages/getInvolved.html.erb</p>

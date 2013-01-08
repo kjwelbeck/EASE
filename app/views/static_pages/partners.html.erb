@@ -1,4 +1,16 @@
 <%provide(:title, 'Partners')%>
 
-<h1>Partners</h1>
+		<div id="navcontainer">
+			<ul id="navlist">
+
+				<li><%= link_to "Home", { :controller => 'static_pages', :action => 'home' }, :class => 'current' -%> </li>
+				<li><%= link_to("About Us", '/static_pages/about')%></li>
+				<li><%= link_to("Get Involved", '/static_pages/getInvolved')%></li>
+				<li><%= link_to("Events", '/static_pages/events')%></li>
+				<li><%= link_to("Gallery", '/static_pages/gallery')%></li>
+				<li><%= link_to("FAQs", '/static_pages/faqs')%></li>
+				<li><%= link_to("Contact Us", '/static_pages/contact')%></li>
+			
+			</ul>
+		</div>
 <p>Find me in app/views/static_pages/partners.html.erb</p>

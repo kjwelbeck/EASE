@@ -4,15 +4,18 @@
 		<div id="navcontainer">
 			<ul id="navlist">
 
-				<li><%= link_to "Home", { :controller => 'static_pages', :action => 'home' } -%> </li>
-				<li><%= link_to("About Us", '/static_pages/about')%></li>
-				<li><%= link_to("Get Involved", '/static_pages/getInvolved')%></li>
-				<li><%= link_to("Events", '/static_pages/events')%></li>
-				<li><%= link_to "Gallery", { :controller => 'static_pages', :action => 'gallery' }, :class => 'current' -%> </li>
-				<li><%= link_to("FAQs", '/static_pages/faqs')%></li>
-				<li><%= link_to("Contact Us", '/static_pages/contact')%></li>
+				<li><%= link_to "Home", root_path%> </li>
+				<li><%= link_to("About Us", about_path)%></li>
+				<li><%= link_to("Get Involved", getInvolved_path)%></li>
+				<li><%= link_to "Partners", partners_path%></li>
+				<li><%= link_to "Board Members", members_path%></li>
+				<li><%= link_to("Events", events_path)%></li>
+				<li><%= link_to "Gallery", gallery_path, :class => 'current' -%> </li>
+				<li><%= link_to("FAQs", faqs_path)%></li>
+				<li><%= link_to("Contact Us", contact_path)%></li>
 			
 			</ul>
 		</div>
+		<div class = "spacer"></div>
 
 <p>Find me in app/views/static_pages/gallery.html.erb</p>

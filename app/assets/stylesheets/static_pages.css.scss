@@ -5,6 +5,13 @@
 
 @import "bootstrap";
 
+
+a{
+   
+    &:link{color: grey;}
+    &:hover {color: black}
+
+}
 center{
     padding:40px;
 }
@@ -240,7 +247,7 @@ ul{
 {
 font-family: Arial,Sans-Serif;
 margin: 0 auto;
-width: 800px;
+width: 900px;
 border-bottom: 1px none #ddd;
 }
 

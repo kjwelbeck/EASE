@@ -1,15 +1,28 @@
 EaseApp::Application.routes.draw do
-  get "static_pages/home"
+  
+  root to:'static_pages#home'
+  match '/about', to:'static_pages#about' 
+  match '/getInvolved', to:'static_pages#getInvolved'
+  match '/members', to:'static_pages#members'
+  match '/partners', to:'static_pages#partners'
+  match '/events', to:'static_pages#events'
+  match '/gallery', to:'static_pages#gallery'
+  match '/faqs', to:'static_pages#faqs'
+  match '/contact', to:'static_pages#contact'
 
-  get "static_pages/about"
 
-  get "static_pages/members"
 
-  get "static_pages/partners"
+  # get "static_pages/home"
 
-  get "static_pages/getInvolved"
+  # get "static_pages/about"
 
-  get "static_pages/gallery"
+  # get "static_pages/members"
+
+  # get "static_pages/partners"
+
+  # get "static_pages/getInvolved"
+
+  # get "static_pages/gallery"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
